@@ -85,15 +85,16 @@ const startTheGame = (elm) => {
         } else {
             whoWonwhoLost.innerHTML = `Haha nice try!! Wanna play again? `;
         }
-        // ======= Game Over Funktion
-        const gamOver = () => {
-            playedRounds = 0;
-            playButtons.classList.add("display-none");
-        };
         gameOver();
     }
+
 };
 
+// ======= Game Over Funktion
+const gameOver = () => {
+    playedRounds = 0;
+    playButtons.classList.add("display-none");
+};
 
 
 
