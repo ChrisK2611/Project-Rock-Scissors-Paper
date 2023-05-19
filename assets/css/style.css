@@ -25,7 +25,7 @@ main {
     text-align: center;
     border: 2px solid black;
     border-radius: 20px;
-    background-image: linear-gradient(violet, lightblue);
+    background-image: linear-gradient(rgba(238, 130, 238, 0.604), rgba(173, 216, 230, 0.654));
     font-family: "Turret", sans-serif;
     font-size: 1.5rem;
 }
