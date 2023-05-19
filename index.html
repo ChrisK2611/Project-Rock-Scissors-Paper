@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Let's Play Schere, Stein, Papier</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <h1>Rock Scissors Paper</h1>
+        <hr>
+            <section>
+                <div class="rounds-counter">
+                    <h2>how many rounds?</h2>
+                    <h2>
+                      <span class="rounds-played"></span>
+                       <span class="rounds-total"></span>
+                    </h2>
+                </div>    
+                <form>
+                    <div class="rounds">
+                        <div>
+                            <input type="radio" value="5" name="howManyRounds" id="rounds5">
+                            <label for="rounds5">5</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="10" name="howManyRounds" id="rounds10">
+                            <label for="rounds10">10</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="15" name="howManyRounds" id="rounds15">
+                            <label for="rounds15">15</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="20" name="howManyRounds" id="rounds20">
+                            <label for="rounds20">20</label>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        <section class="standing">
+            <h2 class="user-score">PLAYER</h2>
+            <p> : </p>
+            <h2 class="com-score">COM</h2>
+        </section>
+        <section>
+            <h2 class="win-or-lose">Common' let's Play</h2>
+        </section>
+        <div class="click-area">
+            <button onclick="startTheGame('Rock')"><img class="images" src="./assets/img/fist.png" alt=""></button>
+            <button onclick="startTheGame('Scissor')"><img class="images" src="./assets/img/peace-symbol.png" alt=""></button>
+            <button onclick="startTheGame('Paper')"><img class="images" src="./assets/img/hello.png" alt=""></button>
+        </div>
+        <div>
+            <button onclick="window.location.reload()">Restart</button>
+        </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
